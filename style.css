@@ -1,0 +1,195 @@
+/* עיצוב אתר: רקע, דף בית עם מפת תמונה, דפי יעד בטבלה */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 40px 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4dfd8;
+    background-image: url('images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.home-page {
+    text-align: center;
+}
+
+body.place-page {
+    text-align: right;
+}
+
+.home-main-title {
+    margin: 28px auto 18px auto;
+    padding: 0 16px;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 22pt;
+    text-align: center;
+    text-shadow: 0 0 6px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+}
+
+.home-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto 28px auto;
+    max-width: 640px;
+    text-align: center;
+}
+
+.home-list li {
+    margin-bottom: 10px;
+}
+
+.home-map-section {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* גודל תצוגה קבוע לפי coords של המפה */
+.home-map-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 720px;
+    height: 360px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.place-heading {
+    width: 85%;
+    max-width: 920px;
+    margin: 28px auto 22px auto;
+    padding: 14px 28px;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20pt;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+.title-centered {
+    text-align: center;
+}
+
+.place-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    max-width: 960px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+}
+
+.place-table td {
+    border: 1px solid #000;
+    padding: 18px 22px;
+    vertical-align: top;
+    text-align: right;
+    line-height: 1.65;
+}
+
+.text-cell {
+    width: 58%;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-cell p {
+    margin: 0 0 1em 0;
+}
+
+.text-cell p:last-child {
+    margin-bottom: 0;
+}
+
+.image-cell {
+    position: relative;
+    width: 42%;
+    padding: 0;
+    vertical-align: top;
+    background-color: rgb(200, 200, 200);
+    overflow: hidden;
+}
+
+.place-table td.image-cell {
+    padding: 0;
+}
+
+/* מילוי תא התמונה לגובה השורה (ללא object-fit — מתיחה למלבן) */
+.image-cell img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+.back-wrap {
+    text-align: center;
+    margin: 40px auto 18px auto;
+}
+
+.back-wrap a {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid darkblue;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 17px;
+}
+
+.back-wrap a:hover {
+    background-color: #e8f0ff;
+    color: #000080;
+}
+
+.back-wrap a:link,
+.back-wrap a:visited {
+    color: darkblue;
+}
+
+h2 {
+    color: #003366;
+    font-size: 14pt;
+}
+
+ul {
+    list-style-type: disc;
+}
